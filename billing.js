@@ -1,6 +1,6 @@
 // 1. Ліквідація Stamp Coupling: функція приймає лише примітивні типи (city, weightKg)
 function calculateDeliveryCost(city, weightKg) {
-    const baseRate = city === "Ivano-Frankivsk" ? 50.0 : 110.0;
+    const baseRate = city === "Kyiv" ? 80.0 : (city === "Ivano-Frankivsk" ? 50.0 : 110.0);
     return baseRate + (weightKg * 15.0);
 }
 
